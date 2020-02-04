@@ -4,24 +4,21 @@ const {
 
 describe('fizzy', () => {
   it(`returns 'Fizz' if the given number is divisible by 3 and not 5.`, () => {
-    const FIZZ = 'Fizz';
-    expect(fizzy(3)).toBe(FIZZ)
-    expect(fizzy(6)).toBe(FIZZ)
-    expect(fizzy(303)).toBe(FIZZ)
+    expect(fizzy(3)).toBe('Fizz')
+    expect(fizzy(6)).toBe('Fizz')
+    expect(fizzy(303)).toBe('Fizz')
   })
 
   it(`returns 'Buzz' if the given number is divisible by 5 and not 3.`, () => {
-    const BUZZ = 'Buzz';
-    expect(fizzy(5)).toBe(BUZZ)
-    expect(fizzy(20)).toBe(BUZZ)
-    expect(fizzy(130)).toBe(BUZZ)
+    expect(fizzy(5)).toBe('Buzz')
+    expect(fizzy(20)).toBe('Buzz')
+    expect(fizzy(130)).toBe('Buzz')
   })
 
   it(`returns 'FizzBuzz' if the given number is divisible by both 3 and 5`, () => {
-    const FIZZBUZZ = 'FizzBuzz';
-    expect(fizzy(15)).toBe(FIZZBUZZ)
-    expect(fizzy(30)).toBe(FIZZBUZZ)
-    expect(fizzy(150)).toBe(FIZZBUZZ)
+    expect(fizzy(15)).toBe('FizzBuzz')
+    expect(fizzy(30)).toBe('FizzBuzz')
+    expect(fizzy(150)).toBe('FizzBuzz')
   })
 
   it(`returns the number if the given number is divisible by neither 3 nor 5`, () => {
